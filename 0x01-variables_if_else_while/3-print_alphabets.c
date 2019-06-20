@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Return: The alphabet in lowercase
+ * Return: The alphabet in lowercase, then in uppercase
 */
 
 int main(void)
