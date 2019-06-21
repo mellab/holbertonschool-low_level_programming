@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Return: The alphabet in lowercase, then in uppercase
+ * Return: All the numbers of base 16
 */
 
 int main(void)
