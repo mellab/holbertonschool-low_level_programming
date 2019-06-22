@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Return: All single digit numbers of base 10 starting from 0
+ * Return: All possible combinations of single-digit numbers with commas
 */
 
 int main(void)
