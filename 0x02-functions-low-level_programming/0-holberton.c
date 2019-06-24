@@ -1,9 +1,9 @@
-#include<stdio.h>
+#include "holberton.h"
 
 /**
  * main - entry point
  *
- * Return: Holberton
+ * Return: A string
  */
 
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 
 	while (string[i] != '\0')
 	{
-		putchar(string[i]);
+		_putchar(string[i]);
 		i++;
 	}
 	return (0);
