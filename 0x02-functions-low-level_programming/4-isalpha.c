@@ -1,18 +1,20 @@
 #include "holberton.h"
 
 /**
- * int _isalpha - entry point
+ * _isalpha - Checks for alphabetic character
+ * @c: Character to check
  *
- * Description: Checks for alphabetic character
- *
- * Return: 1 if c is a letter, returns 0 otherwise
+ * Return: 1 if c is a letter, otherwise returns 0
  */
 
-/* int _isalpha prototype function */
 int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	{
 		return (1);
-else
+	}
+	else
+	{
 		return (0);
+	}
 }
