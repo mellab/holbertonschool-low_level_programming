@@ -3,4 +3,6 @@
 
 int _isupper(int c);
 
+int _isdigit(int c);
+
 #endif /* _holberton_h_ */
