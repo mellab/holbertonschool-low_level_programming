@@ -49,3 +49,6 @@ flycheck_*.el
 
 # putchar
 _putchar.c
+
+# main
+*-main.c
