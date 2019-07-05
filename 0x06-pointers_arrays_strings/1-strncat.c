@@ -4,6 +4,7 @@
  * *_strncat - concatenates two strings
  * @dest: string number one
  * @src: string number two
+ * @n: Size of the src string
  *
  * Return: a concatenated string
  */
