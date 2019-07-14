@@ -12,10 +12,11 @@ int main(int argc, char *argv[])
 {
 	int counter;
 
-	for (counter = 0; counter < argc; counter++)
+	for (counter = 0; counter < argc;)
 	{
-		printf("%2d\n", counter);
-		(void)argv;
+		counter++;
+		(*argv)++;
 	}
+	printf("%2d\n", counter - 1);
 	return (0);
 }
