@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - multiplies two numbers
@@ -7,9 +8,6 @@
  *
  * Return: 1 if the program does not receive two arguments, otherwise return 0
  */
-
-#include<stdio.h>
-#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {
