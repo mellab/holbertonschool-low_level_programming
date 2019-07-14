@@ -28,5 +28,5 @@ int main(int argc, char *argv[])
 		addition += atoi(argv[a]);
 	}
 	printf("%d\n", addition);
-	return(0);
+	return (0);
 }
