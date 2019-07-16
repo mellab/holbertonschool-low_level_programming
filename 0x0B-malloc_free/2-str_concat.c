@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "holberton.h"
+
 /**
  * str_concat - a function that concatenates two strings
  * @s1: string one
@@ -8,6 +9,7 @@
  * which contains in the contents of s1, followed by the contents of s2, and
  * null terminated, otherwise return NULL on failure.
  */
+
 char *str_concat(char *s1, char *s2)
 {
 	int a, b, c = 0;
