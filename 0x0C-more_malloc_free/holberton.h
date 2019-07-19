@@ -3,4 +3,6 @@
 
 int _putchar(char c);
 
+void *malloc_checked(unsigned int b);
+
 #endif /* _holberton_h_ */
