@@ -9,7 +9,7 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int counter = 0 j, i = 0;
+	unsigned int counter = 0, j, i = 0;
 	char *p;
 	const char t_arg[] = "cifs";
 	va_list myList;
