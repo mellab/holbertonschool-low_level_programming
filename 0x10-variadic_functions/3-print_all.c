@@ -9,34 +9,33 @@
 
 void print_all(const char * const format, ...)
 {
-	int counter = 0;
-	va_list myList;
+	unsigned int counter = 0;
 	char *p;
+	va_list myList;
 
 	va_start(myList, format);
 
-	while (format[counter] != '\0')
+	while (format && format[counter] != '\0')
 	{
 		switch (format[counter])
 		{
-			case 'c':
-				printf("%c", va_arg(myList, int));
-				break;
-			case 'i':
-				printf("%i", va_arg(myList, int));
-				break;
-			case 'f':
-				printf("%f", va_arg(myList, double));
-				break;
-			case 's':
+		case 'c':
+			printf("%c", va_arg(myList, int));
+			break;
+		case 'i':
+			printf("%i", va_arg(myList, int));
+			break;
+		case 'f':
+			printf("%f", va_arg(myList, double));
+			break;
+		case 's':
 			p = va_arg(myList, char *);
-				printf("%s", va_arg(myList, char *));
-				if (!p)
-				{
-					printf("%p", p);
-					break;
-				}
-					printf("%s", p);
+			if (p)
+			{
+			printf("%s", p);
+			break;
+			}
+			printf("%s", p);
 				break;
 			default:
 				counter++;
