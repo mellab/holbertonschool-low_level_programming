@@ -1,6 +1,6 @@
-#include "variadic_functions.h"
-#include <stdarg.h>
 #include <stdio.h>
+#include <stdarg.h>
+#include "variadic_functions.h"
 
 /**
  * print_strings - a function that print strings
@@ -11,8 +11,8 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int counter;
-	va_list myList;
 	char *p;
+	va_list myList;
 
 	va_start(myList, n);
 
