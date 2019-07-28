@@ -21,7 +21,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			printf("%i", va_arg(myList, int));
 			if (counter < n - 1)
+			{
 				printf("%s", separator);
+			}
+			else
+			{
+				;
+			}
 		}
 		printf("\n");
 		va_end(myList);
