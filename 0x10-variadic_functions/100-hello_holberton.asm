@@ -2,15 +2,16 @@ section	.text
 	   global main     	;must be declared for linker (ld)
 
 main:		            	;tells linker entry point
-	   mov	edx,len     	;message length
-	   mov	ecx,msg     	;message to write
-	   mov	ebx,1       	;file descriptor (stdout)
-	   mov	eax,4       	;system call number (sys_write)
-	   int	0x80        	;call kernel
+	  mov rax, 1        	; write(
+	  mov rdi, 1        	;   STDOUT_FILENO,
+	  mov rsi, msg      	;   "Hello, world!\n",
+	  mov rdx, msglen   	;   sizeof("Hello, world!\n")
+	  syscall           	; );
 
-	   mov	eax,1       	;system call number (sys_exit)
-	   int	0x80        	;call kernel
+	  mov rax, 60       	; exit(
+	  mov rdi, 0        	;   EXIT_SUCCESS
+	  syscall           	; );
 
-	section	.data
-	msg db 'Hello, Holberton', 0xa ;string to be printed
-	len equ $ - msg		    ;length of the string
+	section .rodata
+msg:	 db "Hello, Holberton", 10
+msglen:	 equ $ - msg
