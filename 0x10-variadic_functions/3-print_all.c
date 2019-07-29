@@ -11,16 +11,16 @@ void print_all(const char * const format, ...)
 {
 	unsigned int counter = 0, j, i = 0;
 	char *p;
-	const char t_arg[] = "cifs";
+	const char arguments[] = "cifs";
 	va_list myList;
 
 	va_start(myList, format);
 	while (format && format[counter])
 	{
 		j = 0;
-		while (t_arg[j])
+		while (arguments[j])
 		{
-			if (format[counter] == t_arg[j] && i)
+			if (format[counter] == arguments[j] && i)
 			{
 				printf(", ");
 				break;
